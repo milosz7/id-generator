@@ -1,6 +1,6 @@
 {
   "name": "@milosz7/id-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "license": "MIT",
@@ -28,10 +28,10 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint . --ext .ts",
     "prepare": "npm run build",
-    "prepublishOnly" : "npm test && npm run lint",
-    "preversion" : "npm run lint",
-    "version" : "npm run format && git add -A src",
-    "postversion" : "git push && git push --tags"
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "devDependencies": {
     "@types/jest": "^28.1.6",

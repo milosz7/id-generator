@@ -10,6 +10,7 @@ const generatedIds: string[] = [];
 
 
 export const randomId = (idLength: Range<5, 11>) => {
+  if (typeof idLength !== 'number') throw Error('Provided argument is not a number!');
   const generatedIdLength = idLength < minIdLength ? minIdLength : idLength <= maxIdLength ? idLength : maxIdLength; 
   let id = '';
   const possibleCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!_@#$%^&';
